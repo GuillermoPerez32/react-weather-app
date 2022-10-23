@@ -1,8 +1,11 @@
 import React from 'react'
+import Board from './components/Board'
 
 const WeatherApp = () => {
   return (
-    <h1>WeatherApp</h1>
+    <div className='main'>
+      <Board />
+    </div>
   )
 }
 
