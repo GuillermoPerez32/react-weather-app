@@ -3,9 +3,7 @@ import Board from './components/Board'
 
 const WeatherApp = () => {
   return (
-    <div className='main'>
       <Board />
-    </div>
   )
 }
 
