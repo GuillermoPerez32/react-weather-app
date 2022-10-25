@@ -1,10 +1,9 @@
 import axios from "axios"
+import { API_KEY, weather_endpoint } from "../constants";
 
-const API_KEY = 'cecc5e2ef30443eb9e9145214222310'
-const endpoint =`https://api.weatherapi.com/v1/current.json`
 
 export const getWeather = async (location) => {
-    const {data} = await axios.get(endpoint, {
+    const {data} = await axios.get(weather_endpoint, {
         params:
         {
             q: encodeURI(location),

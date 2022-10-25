@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import PropTypes from "prop-types";
+import useGetOptions from '../hooks/useGetOptions';
 
 const Search = ({onSubmit}) => {
 
   const [value, setValue] = useState('')
+  const {data:options} = useGetOptions(value)
 
   const handleChange = (e) => {
-
     setValue(e.target.value)
   }
   
@@ -24,7 +25,13 @@ const Search = ({onSubmit}) => {
       value={value}
       onChange={handleChange}
       id='search-text'
+      list='country'
       />
+      <datalist id="country">
+        {options.map(option => 
+<option value={option} key={option}></option>
+          )}
+</datalist>
     </form>
   )
 }
