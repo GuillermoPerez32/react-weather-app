@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const SocialLink = ({url, icon_name}) => {
   return (
@@ -9,6 +10,11 @@ const SocialLink = ({url, icon_name}) => {
     </span>
     </a>
   )
+}
+
+SocialLink.propTypes = {
+    url: PropTypes.string.isRequired,
+    icon_name: PropTypes.string.isRequired
 }
 
 export default SocialLink
