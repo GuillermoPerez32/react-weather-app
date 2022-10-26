@@ -16,7 +16,7 @@ const WeatherView = ({  temp,condition,condition_icon,humidity,wind,location, lo
     <>
     {
       !loading ? (
-      <div className='weather-view animate__animated animate__slideInLeft'>
+      <div className='weather-view animate__animated animate__bounce'>
         <h2 id='location-title'>Weather in {loc}</h2>
         <h1 id='temp'>{temp}<sup>o</sup>C</h1>
         <div className='condition-section'>
