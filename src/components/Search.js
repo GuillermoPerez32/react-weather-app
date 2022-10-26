@@ -18,15 +18,18 @@ const Search = ({onSubmit}) => {
 
   return (
     <form onSubmit={handleSubmit} className="search-bar">
-      <button id='search-button' onClick={handleSubmit}><i className='fa fa-search'></i></button>
       <input
-      type={'text'}
+      type={'search'}
       placeholder='Search...'
       value={value}
       onChange={handleChange}
       id='search-text'
       list='country'
-      />
+      autoComplete={'off'}
+      autoCorrect={'on'}
+      >
+      </input>
+      <button id='search-button' onClick={handleSubmit}><i className='fa fa-search'></i></button>
       <datalist id="country">
         {options.map(option => 
 <option value={option} key={option}></option>

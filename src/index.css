@@ -13,7 +13,7 @@ body{
 .board {
     background-color: rgba(0, 0, 0, 0.8);
     display: inline-block;
-    padding: 2.2em;
+    padding: 2.2em 1em;
     align-self: center;
     position: absolute;
     top: 25%;
@@ -26,14 +26,23 @@ body{
 
 
 /* --------------------SEARCH---------------------------- */
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50%;
+    width: 100%;
+}
+
 input {
     background-color: #585858;
     border: 0;
     border-radius: 2em;
     color: black;
-    padding: .6em 0 .6em 1em;
-    width: 100%;
+    padding: .9em;
     font-size: large;
+    height: 2em;
+    width: 80%;
 }
   
 input:focus {
@@ -45,22 +54,17 @@ input::placeholder {
 }
   
 button {
-    position: absolute;
     border: 0;
     border-radius: 50%;
+    top: 9.5%;
+    right: 15%;
     color: black;
     padding: .3rem;
-    right: -.5em;
-    top: .35em;
     cursor: pointer;
     font-size: larger;
     background-color: white;
-}
-  
-.search-bar {
-    position: relative;
-    display: inline-block;
-    width: 100%;
+    overflow: hidden;
+    position: absolute;
 }
 
 /* --------------------WEATHER VIEW---------------------------- */
