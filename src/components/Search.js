@@ -19,9 +19,9 @@ const Search = ({onSubmit}) => {
   return (
     <form onSubmit={handleSubmit} className="search-bar">
       <input
+      value={value}
       type={'search'}
       placeholder='Search...'
-      value={value}
       onChange={handleChange}
       id='search-text'
       list='country'

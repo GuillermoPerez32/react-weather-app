@@ -41,8 +41,7 @@ input {
     color: black;
     padding: .9em;
     font-size: large;
-    height: 2em;
-    width: 80%;
+    width: 90%;
 }
   
 input:focus {
@@ -54,17 +53,18 @@ input::placeholder {
 }
   
 button {
+    position: relative;
     border: 0;
     border-radius: 50%;
-    top: 9.5%;
-    right: 15%;
+    top: 20.5%;
+    right: 10%;
+    height: 100%;
     color: black;
     padding: .3rem;
     cursor: pointer;
     font-size: larger;
     background-color: white;
     overflow: hidden;
-    position: absolute;
 }
 
 /* --------------------WEATHER VIEW---------------------------- */
