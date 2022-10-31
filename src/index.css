@@ -19,7 +19,7 @@ body{
     top: 25%;
     left: 35%;
     width: 30%;
-    border-radius: 3em;
+    border-radius: 2em;
 }
 
 
@@ -27,6 +27,7 @@ body{
 
 /* --------------------SEARCH---------------------------- */
 .search-bar {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -37,9 +38,9 @@ body{
 input {
     background-color: #585858;
     border: 0;
-    border-radius: 2em;
+    border-radius: 1.5em;
     color: black;
-    padding: .9em;
+    padding: .7em;
     font-size: large;
     width: 90%;
 }
@@ -53,12 +54,11 @@ input::placeholder {
 }
   
 button {
-    position: relative;
+    position: absolute;
     border: 0;
     border-radius: 50%;
-    top: 20.5%;
-    right: 10%;
-    height: 100%;
+    top: 16.5%;
+    right: 8%;
     color: black;
     padding: .3rem;
     cursor: pointer;
