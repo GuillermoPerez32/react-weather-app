@@ -16,12 +16,12 @@ const WeatherView = ({  temp,condition,condition_icon,humidity,wind,location, lo
     <>
     {
       !loading ? (
-      <div className='weather-view animate__animated animate__pulse'>
+      <div className='weather-view animate__animated animate__fadeIn'>
         <h2 id='location-title'>Weather in {loc}</h2>
         <h1 id='temp'>{temp}<sup>o</sup>C</h1>
         <div className='condition-section'>
 
-          <img src={condition_icon} alt={`Ico for ${condition}`}></img>
+          <img src={condition_icon} alt={`Icon for ${condition}`}></img>
           <p>{condition}</p>
         </div>
 
