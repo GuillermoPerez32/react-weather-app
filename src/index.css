@@ -10,6 +10,7 @@ body{
 }
 
 /* --------------------BOARD---------------------------- */
+
 .board {
     background-color: rgba(0, 0, 0, 0.8);
     display: inline-block;
@@ -22,10 +23,8 @@ body{
     border-radius: 2em;
 }
 
-
-
-
 /* --------------------SEARCH---------------------------- */
+
 .search-bar {
     position: relative;
     display: flex;
@@ -89,7 +88,6 @@ button {
     margin: 0;
 }
 
-
 .board *{
     margin: 0;
 }
@@ -99,6 +97,7 @@ button {
 }
 
 /* --------------------FOOTER---------------------------- */
+
 .footer {
     display: flex;
     justify-content: center;
